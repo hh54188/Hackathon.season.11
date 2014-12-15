@@ -1,0 +1,274 @@
+	.block {
+		display: block; 
+	}
+	.ui.small.message {
+		text-decoration: none;
+	}
+	.hide {
+		display: none;
+	}
+	.custom-icon {
+		width: 15px;
+		height: 15px;
+		position: absolute;
+	}
+	.triger-icon {
+		top: 11px;
+		left: 18px;
+		background: url("http://127.0.0.1:8000/dist/icons/left.jpg") no-repeat;
+		background-size: 15px;
+	}
+	.headerWrap .main-btn-group .headerWrap-btn {
+		position: relative;
+		padding: 15px;
+	}
+	.sub-icon {
+		top: 7px;
+		left: 7px;
+		background: url("http://127.0.0.1:8000/dist/icons/plus.jpg") no-repeat;
+		background-size: 15px;
+	}
+	.setting-icon {
+		top: 7px;
+		left: 7px;		
+		background: url("http://127.0.0.1:8000/dist/icons/setting.jpg") no-repeat;
+		background-size: 15px;		
+	}
+	.del-icon {
+		top: 10px;
+		right: 10px;		
+		background: url("http://127.0.0.1:8000/dist/icons/del.jpg") no-repeat;
+		background-size: 23px;
+		width: 23px;
+		height: 23px;		
+	}	
+	.share-icon {
+		top: 14px;
+		right: 38px;		
+		background: url("http://127.0.0.1:8000/dist/icons/share.jpg") no-repeat;
+		background-size: 15px;
+		width: 15px;
+		height: 15px;
+		opacity: .6		
+	}
+	.fav-icon{
+		top: 13px;
+		right: 63px;	
+		width: 18px;
+		height: 18px;
+		opacity: .6		
+	}	
+	.fav-icon-no {
+		background: url("http://127.0.0.1:8000/dist/icons/empty-star.jpg") no-repeat;
+		background-size: 18px;
+	}	
+	.fav-icon-yes {
+		background: url("http://127.0.0.1:8000/dist/icons/star.jpg") no-repeat;
+		background-size: 18px;
+	}			
+	.trash-icon {
+		width:20px;
+		height: 20px;
+		top: 7px;
+		left: 7px;		
+		background: url("http://127.0.0.1:8000/dist/icons/trash.jpg") no-repeat;
+		background-size: 20px;		
+	}
+	.filter-icon {
+		width: 15px;
+		height: 15px;
+		top: -1px;
+		left: 0;
+		background: url("http://127.0.0.1:8000/dist/icons/down-arrow.jpg") no-repeat;
+		background-size: 15px;		
+	}
+	.trans-5 {
+		transition: all .5s ease-out;
+		-moz-transition: all .5s ease-out;
+		-webkit-transition: all .5s ease-out; 
+		-o-transition: all .5s ease-out; 
+	}
+
+	.trans-3, #trigger.trans-3 {
+		transition: all .3s ease-out;
+		-moz-transition: all .3s ease-out;
+		-webkit-transition: all .3s ease-out; 
+		-o-transition: all .3s ease-out;
+	}
+
+	.shadow {
+		box-shadow: 0 0 15px rgba(0,0,0,.5);
+	}
+
+	#docker {
+		width:260px;
+		position: fixed;
+		top: 0;
+		height: 100%;
+		margin-top: 0;
+		z-index: 99999999;
+		background: white;
+		text-align: left;
+	}
+
+	#docker.shadow.ui.segment {
+		box-shadow: 0 0 15px rgba(0,0,0,.3);
+	}
+
+	#docker.shrink {
+		right: -306px;
+	}
+
+	#docker.expand {
+		right: 0;
+	}
+
+	#trigger {
+		position: absolute;
+		height: 36px;
+		top: 100px;
+		background: white;
+		border: 1px solid rgba(0,0,0,.2);
+		border-right: none;
+		-webkit-border-top-left-radius: 6px;
+		-webkit-border-bottom-left-radius: 6px;
+		-webkit-border-top-right-radius: 0;
+		-webkit-border-bottom-right-radius: 0;
+	}
+
+	#trigger.expand {
+		width:80px;
+		left: -78px;
+	}
+
+	#trigger.shrink {
+		width:40px;
+		left: -48px;
+	}
+
+	#trigger .floating.label {
+		right: 80%;
+		left: 0;
+	}
+	.trigger-icon {
+		position: absolute;
+		top: 11px;
+		left: 17px;
+	}
+	.coming-msg {
+		width: 300px;
+		position: fixed;
+		cursor: pointer;
+		z-index: 999999999999;
+		background: rgb(233,250,255);
+	}
+	#docker-message {
+		margin-top: 10px;
+		padding-right: 8px;
+		height: calc(100vh - 115px);
+		overflow-y: auto;
+	}
+	.headerWrap {
+		margin-bottom: -6px;
+		position: relative;
+		height: 33px;
+	}
+	.headerwrap-title{
+		line-height: 40px;
+		font-size: 20px;
+	}
+	.main-btn-group {
+		position: absolute;
+		right: 0;
+		top: 5px;
+	}
+
+/*	.title {
+		position: absolute;
+		left: 0;
+		top: 10px;
+	}*/
+	.tool-bar {
+		position: relative;
+		height: 20px;
+	}
+	.msg-filter {
+		position: absolute;
+		top: 0;
+		height: 10px;
+		width: 100px;
+	}
+	.msg-empty {
+		position: absolute;
+		right: 37px;
+		top: -8px;
+		cursor: pointer;
+	}
+	.sub-tab-sites .site-btn.button {
+    	margin-right: 20px;
+    	margin-bottom: 10px;
+  	}
+  	.sub-tab-add-content {
+  		width:543px;
+  		float:right;
+  	}
+  	.sub-tab-add, .sub-tab-admin {
+  		margin-top:20px;
+  	}
+  	.sub-tab-admin .site-card.card {
+  		width: 230px;
+  	}
+  	.sub-tab-freeze {
+  		width: 100%;
+  		height: 100px;
+  	}
+  	.readed .msg-content, .ui.teal.readed.message .header {
+  		color: rgba(0,0,0,.3);
+  	}
+
+  	.readed img {
+  		opacity: .3;
+  	}
+  	.msg-content-image{
+  		margin-bottom: 10px;
+  	}
+
+	#docker-message::-webkit-scrollbar {
+	    width: 3px;
+	}
+	 
+
+	#docker-message::-webkit-scrollbar-track {
+
+	    background-color: rgba(0, 0, 0, 0.14902);
+		border-bottom-left-radius: 16px;
+		border-bottom-right-radius: 16px;
+		border-top-left-radius: 16px;
+		border-top-right-radius: 16px;
+	}
+	 
+
+	#docker-message::-webkit-scrollbar-thumb {
+	    background: gray;
+		border-bottom-left-radius: 16px;
+		border-bottom-right-radius: 16px;
+		border-top-left-radius: 16px;
+		border-top-right-radius: 16px;
+	}
+	.ui.modal .content.modal-subscribe-content {
+		width: 742px;
+	}
+	.ui.cards .card .button.site-card-del {
+		width: 184px;
+	}
+	.ui.modal .content.modal-setting-content {
+		width: 436px;
+	}
+	.ui.modal .cutom-modal-close {
+		width: 50px;
+		font-size: 18px;
+		font-style: normal;
+		top: 16px;
+		right: 16px;
+		color: black;
+	}

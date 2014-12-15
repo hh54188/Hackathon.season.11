@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./dist/semantic.min.css">
+	<script type="text/javascript" src="./dist/jquery-2.0.2.js"></script>
+	<script type="text/javascript" src="./dist/semantic.min.js"></script>
+	<style type="text/css">
+		.container {
+			width: 960px;
+			margin: 0 auto;
+		}
+	</style>		
+</head>
+<body>
+	<div class="container">
+		<div class="ui warning form segment">
+			<h1 class="ui dividing header">
+			  发送消息
+			</h1>
+	    	<div class="field">
+				<label>网站</label>
+				<input type="text" id="website" />
+	    	</div>
+	    	<div class="field">
+	      		<label>频道</label>
+	      		<input type="text" id="channel" />
+	    	</div>
+	    	<div class="field">
+	      		<label>URL</label>
+	      		<input type="text" id="url" />
+	    	</div>	    	
+		  	<div class="field">
+			    <label>消息内容</label>
+			    <textarea id="detail" value="这是测试消息"></textarea>
+		  	</div>
+		  	<div class="ui submit button" >提交</div>
+		  	<label style="display:none;" id="label-succ">发送成功</label>
+		</div>
+		<div class="ui segment">
+			<div class="ui primary button" id="sample-zhihu">
+			  	知乎问题有新回答啦
+			</div>
+			<div class="ui primary button" id="sample-weibo">
+			  	热门微博更新啦
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+
+		var input_website = $("#website");
+		var input_channel = $("#channel");
+		var input_url = $("#url");
+		var input_detail = $("#detail");
+
+		function filledFields (website, channel, url, detail) {
+			input_website.val(website);
+			input_channel.val(channel);
+			input_url.val(url);
+			input_detail.val(detail);
+		}
+
+		function showSendSuccess () {
+			$("#label-succ").show();
+			setTimeout(function () {
+				$("#label-succ").hide();
+			}, 1000 * 3)
+		}
+
+		$("#sample-zhihu").click(function () {
+			filledFields("知乎", 
+						"知乎", 
+						"http://www.zhihu.com/question/26483699", 
+						"日本的互联网发展缓慢，的确和线下服务的完善有着非常大的关系。......");
+		});
+
+		$("#sample-weibo").click(function () {
+			filledFields("微博", 
+						"热门微博", 
+						"http://hot.weibo.com", 
+						"央视新闻:#今天国家公祭日#【挺起南京！挺起中国！】77年前的今天，南京沦为人间地狱。......");
+		})
+
+		$(".submit").on("click", function () {
+
+			$.ajax({
+				url: "/submit",
+				type: "get",
+				datatype: "json",
+				data: {
+					website: input_website.val(),
+					channel: input_channel.val(),
+					url: input_url.val(),
+					detail: input_detail.val()
+				},
+				success: function (data, textStatus) {
+					console.log(data);
+					showSendSuccess();
+				}
+			})
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+	body {
+		background: rgb(48, 210, 231);
+	}
+
+	* {
+		font-family: '微软雅黑';
+	}
+
+	.block {
+		display: block;
+	}
+	
+	.hide {
+		display: none;
+	}
+
+	.trans-5 {
+		transition: all .5s ease-out;
+		-moz-transition: all .5s ease-out;
+		-webkit-transition: all .5s ease-out; 
+		-o-transition: all .5s ease-out; 
+	}
+
+	.trans-3, #trigger.trans-3 {
+		transition: all .3s ease-out;
+		-moz-transition: all .3s ease-out;
+		-webkit-transition: all .3s ease-out; 
+		-o-transition: all .3s ease-out;
+	}
+
+	.shadow {
+		box-shadow: 0 0 15px rgba(0,0,0,.5);
+	}
+
+	#docker {
+		width:260px;
+		position: fixed;
+		top: 0;
+		height: 100%;
+	}
+
+	#docker.shrink {
+		right: -260px;
+	}
+
+	#docker.expand {
+		right: 0;
+	}
+
+	#trigger {
+		position: absolute;
+		height: 36px;
+		top: 100px;
+		background: white
+	}
+
+	#trigger.expand {
+		width:100px;
+		left: -90px;
+	}
+
+	#trigger.shrink {
+		width:60px;
+		left: -50px;
+	}
+
+	#trigger .floating.label {
+		right: 80%;
+		left: 0;
+	}
+	.coming-msg {
+		width: 300px;
+		position: fixed;
+		cursor: pointer;
+	}
+	#docker-message {
+		margin-top: 10px;
+		/*height: 300px;*/
+		/*height: calc(100% - 36px);*/
+		/*overflow-y: scroll;*/
+	}
+	.headerWrap {
+		margin-bottom: -6px;
+		position: relative;
+		height: 33px;
+	}
+	.main-btn-group {
+		position: absolute;
+		right: 0;
+	}
+	.title {
+		position: absolute;
+		left: 0;
+		top: 10px;
+	}
+	.tool-bar {
+		position: relative;
+		height: 20px;
+	}
+	.msg-filter {
+		position: absolute;
+		top: 0;
+	}
+	.msg-empty {
+		position: absolute;
+		right: 0;
+		top: 0;
+		cursor: pointer;
+	}
+	.sub-tab-sites .site-btn.button {
+    	margin-right: 20px;
+    	margin-bottom: 10px;
+  	}
+  	.sub-tab-add-content {
+  		width:520px;
+  		float:right;
+  	}
+  	.sub-tab-add, .sub-tab-admin {
+  		margin-top:20px;
+  	}
+  	.sub-tab-admin .site-card.card {
+  		width: 230px;
+  	}
+  	.sub-tab-freeze {
+  		width: 100%;
+  		height: 100px;
+  	}
+  	.readed .msg-content, .ui.teal.readed.message .header {
+  		color: rgba(0,0,0,.3);
+  	}
+
+/*	#docker-message::-webkit-scrollbar {
+	    width: 12px;
+	}
+	 
+
+	#docker-message::-webkit-scrollbar-track {
+	    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+	    -webkit-border-radius: 10px;
+	    border-radius: 10px;
+	}
+	 
+
+	#docker-message::-webkit-scrollbar-thumb {
+	    -webkit-border-radius: 10px;
+	    border-radius: 10px;
+	    background: rgba(255,0,0,0.8); 
+	    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+	}
+	#docker-message::-webkit-scrollbar-thumb:window-inactive {
+		background: rgba(128,128,128,0.4); 
+	}	*/
